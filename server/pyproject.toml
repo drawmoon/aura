@@ -1,0 +1,25 @@
+[project]
+name = "aura"
+version = "0.1.0"
+description = "A Context-Aware Intelligent Assistant with Deep Knowledge Integration"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.133.1",
+    "fire>=0.7.1",
+    "langchain-ollama>=1.0.1",
+    "langchain-openai>=1.1.10",
+    "langchain[ollama,openai]>=1.2.10",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.1",
+    "uvicorn>=0.41.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.0",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.ustc.edu.cn/pypi/simple"
+default = true
